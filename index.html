@@ -12,36 +12,42 @@
   <body>
     <div class="container">
       <h1>World Clocks</h1>
+
       <select name="city" id="city">
         <option value="">Select a City...</option>
-        <option value="newyork">New York</option>
-        <option value="berlin">Berlin</option>
-        <option value="sydney">Sydney</option>
-        <option value="beijing">Beijing</option>
+        <option value="America/New_York">New York</option>
+        <option value="Europe/Berlin">Berlin</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Asia/Hong_Kong">Hong Kong</option>
       </select>
 
-      <div class="city">
-        <div>
-          <h2>Los Angeles</h2>
-          <div class="date">Datum Datum Datum</div>
+      <div id="cities">
+        <div class="city" id="losangeles">
+          <div>
+            <h2>Los Angeles</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">12:34:56 <small>AM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Tokyo</h2>
-          <div class="date">Datum Datum Datum</div>
+
+        <div class="city" id="tokyo">
+          <div>
+            <h2>Tokyo</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">12:34:56 <small>AM</small></div>
-      </div>
-      <div class="city">
-        <div>
-          <h2>Paris</h2>
-          <div class="date">Datum Datum Datum</div>
+
+        <div class="city" id="paris">
+          <div>
+            <h2>Paris</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
         </div>
-        <div class="time">12:34:56 <small>AM</small></div>
       </div>
     </div>
+
     <footer>
       This project was coded by Christine Jurgeit-Körner and
       <a href="https://github.com/TinyDotPink/world-clock" target="_blank"
@@ -53,6 +59,7 @@
         is published on Netlify</a
       >
     </footer>
+
     <script src="javascript/index.js"></script>
   </body>
 </html>
